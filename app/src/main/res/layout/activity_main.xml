@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.hch.sqliteproject.MainActivity">
+
+    <LinearLayout
+        android:gravity="right"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <Button
+            android:id="@+id/friends_add"
+            android:text="추가하기"
+            android:textColor="#000"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TextView
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:id="@+id/friends_noList_notify_text"
+            android:text="추가된 리스트가 없습니다."
+            android:textStyle="italic|bold"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/friends_recyclerList"
+            android:background="#CCC"
+            android:paddingTop="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+
+</LinearLayout>

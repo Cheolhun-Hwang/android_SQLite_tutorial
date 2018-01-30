@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.hch.sqliteproject.MotifyItemActivity">
+
+    <LinearLayout
+        android:focusable="true"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:gravity="center"
+            android:layout_weight="3"
+            android:text="이름 : "
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:textColor="#000"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+        <EditText
+            android:textSize="13sp"
+            android:nextFocusDown="@id/modify_phone"
+            android:hint="* 필수  20자 이내"
+            android:layout_weight="1"
+            android:ems="20"
+            android:singleLine="true"
+            android:id="@+id/modify_name"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:gravity="center"
+            android:layout_weight="3"
+            android:text="번호 : "
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:textColor="#000"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+        <EditText
+            android:nextFocusDown="@id/modify_comment"
+            android:textSize="13sp"
+            android:hint="* 필수"
+            android:layout_weight="1"
+            android:ems="30"
+            android:singleLine="true"
+            android:id="@+id/modify_phone"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:gravity="center"
+            android:layout_weight="3"
+            android:text="메모 : "
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:textColor="#000"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+        <EditText
+            android:nextFocusDown="@id/modify_ok_BTN"
+            android:textSize="13sp"
+            android:hint="200자 이내"
+            android:layout_weight="1"
+            android:ems="200"
+            android:maxLines="5"
+            android:lines="5"
+            android:id="@+id/modify_comment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <Button
+            android:id="@+id/modify_cancel_BTN"
+            android:layout_margin="20dp"
+            android:textColor="#000"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:text="취소"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+        <Button
+            android:id="@+id/modify_ok_BTN"
+            android:layout_margin="20dp"
+            android:textColor="#000"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:text="완료"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+</LinearLayout>
